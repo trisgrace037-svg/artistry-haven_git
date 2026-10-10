@@ -1,0 +1,318 @@
+<html>
+    <head>
+        <title></title>
+    </head>
+    <style>
+ @media (max-width: 992px){
+        
+    .services{
+    grid-template-columns: repeat(2, 1fr);}
+    }
+@media (max-width: 600px){
+        
+    .services{
+            grid-template-columns: 1fr;
+        }}
+*{
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 1.5;
+}
+body{
+    grid-template-columns: repeat(4, 1fr);
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    overflow-x: hidden;
+}
+.header-cont{
+    background: linear-gradient(to right, #0000ff, #ff0000);
+    width: 100vw;
+    height: 80vh;
+    color:#fff;
+    position: relative;
+}
+.navbar{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 20px 10%;
+    position:sticky;
+    top:0;
+    left:0;
+    right: 0;
+    z-index: 10;
+}
+.nav-links{
+    list-style-type: none;
+    display:flex;
+    gap:35px
+}
+.nav-links li a{
+    text-decoration: none;
+    color:#fff;
+    font-weight: 500;
+    font-size: 15px;
+}
+.nav-links li a:hover{
+    color: #000;
+    background-color: #fff;
+    padding: 10px;
+}
+.caption{
+    margin: 13% 10%;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 100;
+}
+.bg-special{
+    background-color: #fff9c4;
+    color:#333333;
+}
+.section-heading{
+    text-align: center;
+    margin: 50px 0px 20px 0px;
+    font-size: 2rem; 
+}
+.section-heading-border{
+    width: 100px;
+    height: 4px;
+    background-color: #ff6f61;
+    margin: 0 auto 30px auto;
+}
+.services{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    box-shadow: ;
+    text-align: center;
+    padding: 50px;
+}
+.service{
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.3);
+    border-radius: 10px;
+    }
+    .gallery{
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+    .gallery-items img{
+    width: 100%;
+    height: 250px;
+    border-radius: 10px;}
+    .gallery-items{
+        width: 25%;
+    }
+    .gallery-items:hover{
+        transform: scale(1.1);
+        transition: 0.8s ease-in-out;
+    }
+
+    .testimonials{
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        text-align: center;
+        padding: 50px;
+    }
+    .testimonials-img{
+        width: 100px;
+
+        height: 100px;
+        border-radius: 50%;
+    }
+    .teams{
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        text-align: center;
+        padding: 50px;
+    }
+    .team img{
+        width: 300px;
+        border-radius: 10px;
+        height: 300px;
+    }
+    .footer-cont{
+        background-color: #333333;
+        color: #fff;
+        text-align: center;
+        padding: 50px;
+        display: flex;
+        justify-content: space-between;
+    }
+    </style>
+    <body>
+<header class="header-cont">
+    <nav class="navbar">
+        <div class="logo">
+            <h2>Artistry Heaven</h2>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#Home">Home</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#team">Our Team</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="caption">
+        <h1><span class="bg-special">Dive into a world</span> where colors come alive, and
+        <span class="bg-special">imagination takes flight</span></h1>
+    </div> 
+</header>
+<section class="services-cont">
+    <h2 class="section-heading">Our Services</h2>
+    <div class="section-heading-border"></div>
+
+<div class="services">
+    <div class="service">
+        <div class="service-icon"><img src="images/Painting1.png" width="200px" height="200px"></div>
+            <h3>Painting</h3>
+<p> Explore a vibrant collection of paintings that capture the eessence  of creativity and emotion.</p>
+</div>
+        
+            <div class="service">
+            <div class="service-icon"><img src="images/Sculpture1.jpg" width="200px" height="200ppx"></div>
+                    <h3>sculpture</h3>
+<p> Discover intricate sculpture that bring form and  texture to life, showcasing artistic mastery</p>
+</div>
+
+    <div class="service">
+            <div class="service-icon"><img src="images/Digitalart1.png" width="200px" height="200ppx"></div>
+                    <h3>Digital Art</h3>
+<p> Dive into the art digital artstry where technology meets imagination to create stunning visuals</p>
+    </div>
+    </div>
+</section>
+
+<section class="gallery-cont" id="gallery">
+    <h2 class="section-heading">Gallery</h2>
+    <div class="section-heading-border"></div>
+    <div class="gallery">
+
+        <div class="gallery-items">
+            <a href="images/Sculpture1.jpg" target="_blank">
+                <img src="images/Sculpture1.jpg"></a>
+        </div>
+
+        <div class="gallery-items">
+            <a href="images/Digitalart5.png" target="_blank">
+                <img src="images/Digitalart5.png"></a>
+        </div>
+
+        <div class="gallery-items">
+            <a href="images/Painting2.png" target="_blank">
+                <img src="images/Painting5.png"></a>
+        </div>
+
+        <div class="gallery-items">
+            <a href="images/Sculpture3.png" target="_blank">
+                <img src="images/Sculpture3.png"></a>
+        </div>
+
+        <div class="gallery-items">
+            <a href="images/Digitalart8.png" target="_blank">
+                <img src="images/Digitalart8.png"></a>
+        </div>
+
+        <div class="gallery-items">
+            <a href="images/Painting6.png" target="_blank">
+                <img src="images/Painting6.png"></a>
+        </div>
+
+        <div class="gallery-items">
+            <a href="images/Sculpture4.png" target="_blank">
+                <img src="images/Sculpture4.png"></a>
+        </div>
+
+        <div class="gallery-items">
+            <a href="images/Painting10.png" target="_blank">
+                <img src="images/Painting10.png"></a>
+        </div>
+
+        <div class="gallery-items">
+            <a href="images/Digitalart2.png" target="_blank">
+                <img src="images/Digitalart2.png"></a>
+        </div>
+
+        <div class="gallery-items">
+            <a href="images/Sculpture10.png" target="_blank">
+                <img src="images/Sculpture10.png"></a>
+        </div>
+    </div>
+</section>
+    <section class="testimonials-cont">
+        <h2 class="section-heading">What  Our Clients Say</h2>
+        <div class="section-heading-border"></div>
+
+        <div class="testimonials">
+            <div class="testimonial">
+                <img src="images/Girl1.jfif" class="testimonials-img">
+                <p>"Artistry Haven Transformed my living space  with their stunning paintings.Truly a haven for lovers!"</p>
+                <h4>-Sarah L.</h4>
+            </div>
+
+            <div class="testimonial">
+                <img src="images/Girl2.jfif" class="testimonials-img">
+                <p>"The sculptures i purchased are exquisite. The craftsmanship and attention to details are unparalled"</p>
+                <h4>-Mark D.</h4>
+            </div>
+
+            <div class="testimonial">
+                <img src="images/Girl1.jfif" class="testimonials-img">
+                <p>"I was blown  away by the digital art of collection. TThe creativity and innovation are truly inspiring"</p>
+                <h4>-Mary J.</h4>
+            </div>
+        </div>
+    </section>
+
+<section class="team-cont" id="team">
+    <h2 class="section-heading">Our Team</h2>
+    <div class="section-heading-border"></div>
+    <div class="teams">
+       <div class="team">
+        <img src="images/Girl1.jfif">
+        <h3>Elisha Olubukola</h3>
+        <p>Founder</p>
+       </div>
+
+       <div class="team">
+        <img src="images/Girl2.jfif">
+        <h3>Wale</h3>
+        <p>Designer</p>
+       </div>
+
+
+       <div class="team">
+        <img src="images/Girl1.jfif">
+        <h3>Amirat</h3>
+        <p>Developer</p>
+       </div>
+    </div>
+</section>
+
+<footer class="footer-cont">
+    <div class="footer-col">
+        <h2>Artistry Haven</h2>
+    </div>
+
+    <div class="footer-col">
+        <h3>Contact Us</h3>
+        <p>artistryhaven@gmail.com</p>
+        <p>10 free st JKL LU</p>
+    </div>
+
+    <div class="footer-col">
+        <h3>Contact Us</h3>
+        icons
+    </div>
+</footer>
+    </body>
+</html>
