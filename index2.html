@@ -1,0 +1,235 @@
+<html>
+    <head>
+        <title></title>
+    </head>
+    <style>
+ @media (max-width: 992px){
+        
+    .services{
+    grid-template-columns: repeat(2, 1fr);}
+    }
+@media (max-width: 600px){
+        
+    .services{
+            grid-template-columns: 1fr;
+        }}
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 1.5;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    overflow-x: hidden;
+}
+.header-cont{
+    background: url(images/Pef8.jpg);
+    width: 100vw;
+    height: 80vh;
+    color:#fff;
+    position: relative;
+}
+
+.navbar{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 20px 10%;
+    position:sticky;
+    top:0;
+    left:0;
+    right: 0;
+    z-index: 10;
+}
+.nav-links{
+    list-style-type: none;
+    display:flex;
+    gap:35px
+}
+.nav-links li a{
+    text-decoration: none;
+    color:#fff;
+    font-weight: 500;
+    font-size: 15px;
+}
+.nav-links li a:hover{
+    color: #000;
+    background-color: #fff;
+    padding: 10px;
+}
+.caption{
+    margin: 13% 10%;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 100;
+}
+.bg-special{
+    background-color: #fff9c4;
+    color:#333333;
+}
+.section-heading{
+    text-align: center;
+    margin: 50px 0px 10px 0px;
+    font-size: 2rem; 
+}
+.section-heading-border{
+    width: 200px;
+    height: 4px;
+    background-color: #ff6f61;
+    margin: 0 auto 30px auto;
+}
+.services{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    box-shadow: ;
+    text-align: center;
+    padding: 50px;
+}
+.service{
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.3);
+    border-radius: 10px;
+    }
+    .gallery{
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+    .gallery-items img{
+    width: 100%;
+    height: 250px;
+    border-radius: 10px;}
+    .gallery-items{
+        width: 25%;
+    }
+    .gallery-items:hover{
+        transform: scale(1.1);
+        transition: 0.8s ease-in-out;
+    }
+
+    .testimonials{
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        text-align: center;
+        padding: 50px;
+    }
+    .testimonials-img{
+        width: 100px;
+
+        height: 100px;
+        border-radius: 50%;
+    }
+    .teams{
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        text-align: center;
+        padding: 50px;
+    }
+    .team img{
+        width: 300px;
+        border-radius: 10px;
+        height: 300px;
+    }
+    </style>
+    <body>
+<header class="header-cont">
+    <nav class="navbar">
+        <div class="logo">
+            <h2>Zahra Glow</h2>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index2.html">Home</a></li>
+            <li><a href="Our Scent Story.html">Our scent story </a></li>
+            <li><a href="collection.html">Our Collections</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="caption">
+        <h1>Awaken your essence, timeless scent and natural glow.</h1>
+    </div> 
+</header>
+<section class="services-cont">
+    <h2 class="section-heading">Our Essence</h2>
+    <div class="section-heading-border"></div>
+
+<div class="services">
+    <div class="service">
+        <div class="service-icon"><img src="images/Pef5.jpg" width="200px" height="200px"></div>
+            <h3>Signature Fragrance</h3>
+<p>Long lasting perfumes crafted to leave unfogettable memories.</p>
+</div>
+        
+            <div class="service">
+            <div class="service-icon"><img src="images/Bodycream.jpg" width="200px" height="200px"></div>
+                    <h3>Luminous Body Creams</h3>
+<p>Natural creams and lotion specially made to make you have a radiant,  soft, and glowing skin.</p>
+</div>
+
+    <div class="service">
+            <div class="service-icon"><img src="images/Pefstore.jpg" width="200px" height="200px"></div>
+                    <h3>Wholesale</h3>
+<p>We create and supply your own brand- perfect for  businesses and resellers.</p>
+    </div>
+    </div>
+</section>
+
+    <section class="testimonials-cont">
+        <h2 class="section-heading">What  Our Clients Say</h2>
+        <div class="section-heading-border"></div>
+
+        <div class="testimonials">
+            <div class="testimonial">
+                <img src="images/testifier1.jpg" class="testimonials-img">
+                <p>"The Luminous Oud last all day! i get compliments everywhere i go in lagos. Worth every naira"</p>
+                <h4>Chioma A.</h4>
+            </div>
+
+            <div class="testimonial">
+                <img src="images/testifier3.jpg" class="testimonials-img">
+                <p>"I was shocked by the packaging. Pure luxury. It feels like a perfume worth 150k but affordable."</p>
+                <h4>Tunde K.</h4>
+            </div>
+
+            <div class="testimonial">
+                <img src="images/testifier2.jpg" class="testimonials-img">
+                <p>"The Body lotion changed my skin completely. My glow is  real now, my friends keep asking my secret."</p>
+                <h4>Zara M.</h4>
+            </div>
+        </div>
+    </section>
+
+<section class="team-cont" id="team">
+    <h2 class="section-heading">Meet the Makers</h2>
+    <div class="section-heading-border"></div>
+    <div class="teams">
+       <div class="team">
+        <img src="images/Thefounder.jpg">
+        <h3>Aisha Bello</h3>
+        <h4>Founder</h4><p>Creates Signature long-lasting Scentes <br> and luxury perfume blends</p>
+       </div>
+
+       <div class="team">
+        <img src="images/PefSSpecialist.jpg">
+        <h3>David Okafor</h3>
+        <h4>Skincare Specialist</h4><p>Formulates Natural Body Creams for <br> soft, glowing skin</p>
+       </div>
+
+
+       <div class="team">
+        <img src="images/Creativedirector.jpg">
+        <h3>kenny</h3>
+        <h3>Creative Director</h3><p>Design Luxury bottles, gift boxes and brand <br> packaging</p>
+       </div>
+    </div>
+</section>
+
+    </body>
+</html>
